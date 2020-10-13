@@ -9,7 +9,7 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
     
-    var movie: Movie?
+    var movie: Movie!
     
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -26,8 +26,8 @@ class MovieDetailViewController: UIViewController {
     }
     
     func fillUI () {
-        movieImageView?.image = UIImage(named: movie?.image ?? "")
-        titleLabel?.text = movie?.title
-        descriptionLabel?.text = movie?.description
+        movieImageView.image = UIImage(named: movie.image)
+        titleLabel.text = movie.title
+        descriptionLabel.text = movie?.description
     }
 }
