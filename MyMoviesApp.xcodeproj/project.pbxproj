@@ -16,6 +16,7 @@
 		825100C125353506000D81A7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C025353506000D81A7 /* MovieService.swift */; };
 		825100C425353710000D81A7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C325353710000D81A7 /* MoviesViewController.swift */; };
 		825100C825353B39000D81A7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C725353B39000D81A7 /* MovieCell.swift */; };
+		825100CB253540B6000D81A7 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100CA253540B6000D81A7 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		825100C025353506000D81A7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		825100C325353710000D81A7 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		825100C725353B39000D81A7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		825100CA253540B6000D81A7 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				825100C325353710000D81A7 /* MoviesViewController.swift */,
+				825100CA253540B6000D81A7 /* MovieDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				825100BE25353449000D81A7 /* Movie.swift in Sources */,
 				825100C825353B39000D81A7 /* MovieCell.swift in Sources */,
 				825100A725353370000D81A7 /* SceneDelegate.swift in Sources */,
+				825100CB253540B6000D81A7 /* MovieDetailViewController.swift in Sources */,
 				825100C125353506000D81A7 /* MovieService.swift in Sources */,
 				825100C425353710000D81A7 /* MoviesViewController.swift in Sources */,
 			);
