@@ -16,6 +16,13 @@ class MovieCell: UITableViewCell {
         self.titleLabel.text = movie.title
         self.descriptionLabel.text = movie.description
         self.movieImageView.image = UIImage(named: movie.image)
+        self.configureMovieImageView()
+    }
+    
+    
+    func configureMovieImageView() {
+        self.movieImageView.layer.cornerRadius = self.movieImageView.layer.bounds.height / 2
+        self.movieImageView.clipsToBounds = true
     }
     
 }
