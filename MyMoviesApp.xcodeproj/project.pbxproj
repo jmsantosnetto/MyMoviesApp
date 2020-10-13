@@ -15,6 +15,7 @@
 		825100BE25353449000D81A7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100BD25353449000D81A7 /* Movie.swift */; };
 		825100C125353506000D81A7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C025353506000D81A7 /* MovieService.swift */; };
 		825100C425353710000D81A7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C325353710000D81A7 /* MoviesViewController.swift */; };
+		825100C825353B39000D81A7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825100C725353B39000D81A7 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		825100BD25353449000D81A7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		825100C025353506000D81A7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		825100C325353710000D81A7 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		825100C725353B39000D81A7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		825100BC2535342E000D81A7 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				825100C725353B39000D81A7 /* MovieCell.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				825100A525353370000D81A7 /* AppDelegate.swift in Sources */,
 				825100BE25353449000D81A7 /* Movie.swift in Sources */,
+				825100C825353B39000D81A7 /* MovieCell.swift in Sources */,
 				825100A725353370000D81A7 /* SceneDelegate.swift in Sources */,
 				825100C125353506000D81A7 /* MovieService.swift in Sources */,
 				825100C425353710000D81A7 /* MoviesViewController.swift in Sources */,

@@ -28,9 +28,9 @@ class MoviesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: self.movieCellReusableId)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.movieCellReusableId) as! MovieCell
         
-        cell.textLabel?.text = movies[indexPath.row].title
+        cell.loadUI(movie: movies[indexPath.row])
         
         return cell
     }
