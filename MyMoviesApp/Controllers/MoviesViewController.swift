@@ -9,8 +9,34 @@ import UIKit
 
 class MoviesViewController: UITableViewController {
     
+    let movieCellReusableId = "movieCell"
+    var movies: [Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.getMovies()
+        tableView.layoutIfNeeded()
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.movies.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.movieCellReusableId)!
+        
+        cell.textLabel?.text = movies[indexPath.row].title
+        
+        return cell
+    }
+    
+    func getMovies() {
+        self.movies = MovieService.instance.getMovies()
     }
     
 }
