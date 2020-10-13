@@ -32,6 +32,7 @@
 		825100C325353710000D81A7 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		825100C725353B39000D81A7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		825100CA253540B6000D81A7 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		825100CD2535492C000D81A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		8251009825353370000D81A7 = {
 			isa = PBXGroup;
 			children = (
+				825100CD2535492C000D81A7 /* README.md */,
 				825100A325353370000D81A7 /* MyMoviesApp */,
 				825100A225353370000D81A7 /* Products */,
 			);
