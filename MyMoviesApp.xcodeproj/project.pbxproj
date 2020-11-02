@@ -20,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		821F91652548C56200F9F729 /* Project.xd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Project.xd; sourceTree = "<group>"; };
+		821F91662548C56200F9F729 /* Dribbble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dribbble.png; sourceTree = "<group>"; };
+		821F91672548C56200F9F729 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		821F91682548C56200F9F729 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		821F91692548C56200F9F729 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		821F916A2548C56200F9F729 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		821F916B2548C56200F9F729 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		821F916C2548C56200F9F729 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		821F916D2548C56200F9F729 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		825100A125353370000D81A7 /* MyMoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		825100A425353370000D81A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		825100A625353370000D81A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +55,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821F91642548C56200F9F729 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				821F91652548C56200F9F729 /* Project.xd */,
+				821F91662548C56200F9F729 /* Dribbble.png */,
+				821F91672548C56200F9F729 /* 4.png */,
+				821F91682548C56200F9F729 /* 5.png */,
+				821F91692548C56200F9F729 /* 7.png */,
+				821F916A2548C56200F9F729 /* 6.png */,
+				821F916B2548C56200F9F729 /* 2.png */,
+				821F916C2548C56200F9F729 /* 3.png */,
+				821F916D2548C56200F9F729 /* 1.png */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		8251009825353370000D81A7 = {
 			isa = PBXGroup;
 			children = (
+				821F91642548C56200F9F729 /* screens */,
 				825100CD2535492C000D81A7 /* README.md */,
 				825100A325353370000D81A7 /* MyMoviesApp */,
 				825100A225353370000D81A7 /* Products */,
