@@ -43,8 +43,13 @@ class MoviesViewController: UITableViewController {
     }
     
     func prepareView() {
-        movies = service.getMovies()
-        tableView.reloadData()
+        service.getTopRatedMovies { (movies) in
+            self.movies = movies
+            self.tableView.reloadData()
+        } onError: { (error) in
+            print("Error -> \(error)")
+        }
+
     }
     
 }
