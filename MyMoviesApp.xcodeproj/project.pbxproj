@@ -55,7 +55,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		821F91642548C56200F9F729 /* screens */ = {
+		821F91642548C56200F9F729 /* ScreenPrototypes */ = {
 			isa = PBXGroup;
 			children = (
 				821F91652548C56200F9F729 /* Project.xd */,
@@ -68,13 +68,13 @@
 				821F916C2548C56200F9F729 /* 3.png */,
 				821F916D2548C56200F9F729 /* 1.png */,
 			);
-			path = screens;
+			path = ScreenPrototypes;
 			sourceTree = "<group>";
 		};
 		8251009825353370000D81A7 = {
 			isa = PBXGroup;
 			children = (
-				821F91642548C56200F9F729 /* screens */,
+				821F91642548C56200F9F729 /* ScreenPrototypes */,
 				825100CD2535492C000D81A7 /* README.md */,
 				825100A325353370000D81A7 /* MyMoviesApp */,
 				825100A225353370000D81A7 /* Products */,
@@ -92,26 +92,24 @@
 		825100A325353370000D81A7 /* MyMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
-				825100BC2535342E000D81A7 /* Layout */,
 				825100BB25353416000D81A7 /* Controllers */,
 				825100BA2535340E000D81A7 /* Services */,
-				825100B925353400000D81A7 /* Entities */,
+				825100B925353400000D81A7 /* Models */,
+				825100BC2535342E000D81A7 /* Views */,
+				825100AD25353372000D81A7 /* Assets.xcassets */,
 				825100A425353370000D81A7 /* AppDelegate.swift */,
 				825100A625353370000D81A7 /* SceneDelegate.swift */,
-				825100AA25353370000D81A7 /* Main.storyboard */,
-				825100AD25353372000D81A7 /* Assets.xcassets */,
-				825100AF25353372000D81A7 /* LaunchScreen.storyboard */,
 				825100B225353373000D81A7 /* Info.plist */,
 			);
 			path = MyMoviesApp;
 			sourceTree = "<group>";
 		};
-		825100B925353400000D81A7 /* Entities */ = {
+		825100B925353400000D81A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				825100BD25353449000D81A7 /* Movie.swift */,
 			);
-			path = Entities;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		825100BA2535340E000D81A7 /* Services */ = {
@@ -131,12 +129,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		825100BC2535342E000D81A7 /* Layout */ = {
+		825100BC2535342E000D81A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				825100AA25353370000D81A7 /* Main.storyboard */,
+				825100AF25353372000D81A7 /* LaunchScreen.storyboard */,
 				825100C725353B39000D81A7 /* MovieCell.swift */,
 			);
-			path = Layout;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

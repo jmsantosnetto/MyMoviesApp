@@ -11,12 +11,16 @@ class MoviesViewController: UITableViewController {
     
     let movieCellReusableId = "movieCell"
     var movies: [Movie] = []
+    private let service = MovieService.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.getMovies()
-        tableView.layoutIfNeeded()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getMovies()
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,28 +34,19 @@ class MoviesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.movieCellReusableId) as! MovieCell
         
-        cell.loadUI(movie: movies[indexPath.row])
+        cell.prepare(with: movies[indexPath.row])
         
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        self.viewDetails(movie: self.movies[indexPath.row])
-    }
-    
-    func viewDetails(movie: Movie) {
-        let detailViewController = storyboard?.instantiateViewController(identifier: "MovieDetail") as! MovieDetailViewController
-        
-        detailViewController.modalPresentationStyle = .fullScreen
-        detailViewController.movie = movie
-        
-        self.present(detailViewController, animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let movieDetailsViewController = segue.destination as! MovieDetailViewController
+        let movie = movies[tableView.indexPathForSelectedRow!.row]
+        movieDetailsViewController.movie = movie
     }
     
     func getMovies() {
-        self.movies = MovieService.instance.getMovies()
+        self.movies = service.getMovies()
     }
     
 }

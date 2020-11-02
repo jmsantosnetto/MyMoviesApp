@@ -10,6 +10,10 @@ import Foundation
 class MovieService {
     static let instance = MovieService()
     
+    private init() {
+        
+    }
+    
     private let movies: [Movie] = [
         Movie(title: "007 - Spectre", description: "Filme sobre 007", image: "filme1"),
         Movie(title: "Star Wars", description: "Uma guerra no espaço", image: "filme2"),
