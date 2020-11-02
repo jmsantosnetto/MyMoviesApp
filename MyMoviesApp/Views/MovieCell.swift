@@ -14,8 +14,8 @@ class MovieCell: UITableViewCell {
     
     func prepareCell(with movie: Movie) {
         titleLabel.text = movie.title
-        descriptionLabel.text = movie.description
-        movieImageView.image = UIImage(named: movie.image)
+        descriptionLabel.text = movie.overview
+        movieImageView.image = UIImage(named: movie.getPosterImageUrl(ofSize: PosterImageSizes.w342.rawValue))
         
         configureMovieImageView()
     }

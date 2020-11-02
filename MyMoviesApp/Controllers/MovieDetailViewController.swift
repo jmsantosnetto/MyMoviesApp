@@ -21,7 +21,7 @@ class MovieDetailViewController: UIViewController {
     
     func prepareView () {
         title = movie.title
-        movieImageView.image = UIImage(named: movie.image)
-        descriptionLabel.text = movie?.description
+        movieImageView.image = UIImage(named: movie.getPosterImageUrl(ofSize: PosterImageSizes.w185.rawValue))
+        descriptionLabel.text = movie.overview
     }
 }
