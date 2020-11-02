@@ -92,10 +92,10 @@
 		825100A325353370000D81A7 /* MyMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
-				825100BB25353416000D81A7 /* Controllers */,
 				825100BA2535340E000D81A7 /* Services */,
 				825100B925353400000D81A7 /* Models */,
 				825100BC2535342E000D81A7 /* Views */,
+				825100BB25353416000D81A7 /* Controllers */,
 				825100AD25353372000D81A7 /* Assets.xcassets */,
 				825100A425353370000D81A7 /* AppDelegate.swift */,
 				825100A625353370000D81A7 /* SceneDelegate.swift */,
@@ -372,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josemartinsnetto.MyMoviesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -391,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josemartinsnetto.MyMoviesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

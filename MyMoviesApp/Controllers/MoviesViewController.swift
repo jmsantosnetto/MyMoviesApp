@@ -8,8 +8,6 @@
 import UIKit
 
 class MoviesViewController: UITableViewController {
-    
-    let movieCellReusableId = "movieCell"
     var movies: [Movie] = []
     private let service = MovieService.instance
     
@@ -19,8 +17,7 @@ class MoviesViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getMovies()
-        tableView.reloadData()
+        prepareView()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,13 +25,13 @@ class MoviesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.movies.count
+        return movies.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: self.movieCellReusableId) as! MovieCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell") as! MovieCell
         
-        cell.prepare(with: movies[indexPath.row])
+        cell.prepareCell(with: movies[indexPath.row])
         
         return cell
     }
@@ -45,8 +42,9 @@ class MoviesViewController: UITableViewController {
         movieDetailsViewController.movie = movie
     }
     
-    func getMovies() {
-        self.movies = service.getMovies()
+    func prepareView() {
+        movies = service.getMovies()
+        tableView.reloadData()
     }
     
 }

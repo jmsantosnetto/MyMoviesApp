@@ -8,9 +8,9 @@
 import Foundation
 
 class Movie {
-    var title: String!
-    var description: String!
-    var image: String!
+    var title: String
+    var description: String
+    var image: String
     
     init(title: String, description: String, image: String) {
         self.title = title

@@ -11,7 +11,6 @@ class MovieService {
     static let instance = MovieService()
     
     private init() {
-        
     }
     
     private let movies: [Movie] = [
