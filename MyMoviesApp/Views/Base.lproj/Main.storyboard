@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieCell" id="rNs-yB-CbP" customClass="MovieCell" customModule="MyMoviesApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieCell" id="rNs-yB-CbP" customClass="MovieCell" customModule="MyMoviesApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rNs-yB-CbP" id="mgF-ZR-PDH">
@@ -83,11 +83,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-Gh-ASb">
-                                <rect key="frame" x="20" y="160" width="374" height="448"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-Gh-ASb">
+                                <rect key="frame" x="20" y="160" width="374" height="397"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ahm-Gh-ASb" secondAttribute="height" multiplier="758:805" id="NcC-cf-swS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-Ra-5zP">
-                                <rect key="frame" x="20" y="628" width="374" height="21"/>
+                                <rect key="frame" x="20" y="577" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -99,7 +107,6 @@
                             <constraint firstItem="rmE-Ra-5zP" firstAttribute="top" secondItem="Ahm-Gh-ASb" secondAttribute="bottom" constant="20" id="2iH-yC-OkD"/>
                             <constraint firstItem="rmE-Ra-5zP" firstAttribute="trailing" secondItem="Ahm-Gh-ASb" secondAttribute="trailing" id="4ZM-WN-sgy"/>
                             <constraint firstItem="pII-g4-P7C" firstAttribute="trailing" secondItem="Ahm-Gh-ASb" secondAttribute="trailing" constant="20" id="6qF-bT-FH3"/>
-                            <constraint firstItem="Ahm-Gh-ASb" firstAttribute="height" secondItem="omO-2g-gc2" secondAttribute="height" multiplier="1:2" id="ZTP-f2-An1"/>
                             <constraint firstItem="Ahm-Gh-ASb" firstAttribute="leading" secondItem="pII-g4-P7C" secondAttribute="leading" constant="20" id="hic-Bp-gy0"/>
                             <constraint firstItem="rmE-Ra-5zP" firstAttribute="leading" secondItem="Ahm-Gh-ASb" secondAttribute="leading" id="uho-td-jxV"/>
                             <constraint firstItem="Ahm-Gh-ASb" firstAttribute="top" secondItem="pII-g4-P7C" secondAttribute="top" constant="20" id="vc8-mr-TwS"/>

@@ -17,7 +17,7 @@ class MovieService {
     private let movies: [Movie] = [
         Movie(title: "007 - Spectre", description: "Filme sobre 007", image: "filme1"),
         Movie(title: "Star Wars", description: "Uma guerra no espaço", image: "filme2"),
-        Movie(title: "impacto Mortal", description: "Segure-se firme", image: "filme3"),
+        Movie(title: "Impacto Mortal", description: "Segure-se firme", image: "filme3"),
         Movie(title: "Deadpool", description: "Comédia com luta", image: "filme4"),
         Movie(title: "O Regresso", description: "Cenas impactantes", image: "filme5"),
         Movie(title: "A Herdeira", description: "Muito Macabro", image: "filme6"),
